@@ -1,7 +1,7 @@
 {
   "name": "jobboard",
   "version": "1.0.0",
-  "description": "A lightweight job application pipeline for thoughtful searches.",
+  "description": "Job application pipeline for tracking roles, interviews, and follow-ups.",
   "private": true,
   "main": "desktop/main.cjs",
   "scripts": {
