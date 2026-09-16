@@ -1,7 +1,7 @@
 {
   "name": "jobboard",
-  "version": "1.0.0",
-  "description": "Job application pipeline for tracking roles, interviews, and follow-ups.",
+  "version": "1.0.5",
+  "description": "Self-contained Windows desktop job application pipeline for roles and follow-ups.",
   "private": true,
   "main": "desktop/main.cjs",
   "scripts": {
@@ -29,8 +29,31 @@
       "package.json"
     ],
     "win": {
-      "target": "portable",
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "asar": true,
+    "portable": {
       "artifactName": "Jobboard-Portable-${version}.exe"
+    },
+    "nsis": {
+      "artifactName": "Jobboard-Setup-${version}.exe",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
     }
   }
 }
