@@ -1,0 +1,9 @@
+{
+  "name": "Jobboard",
+  "short_name": "Jobboard",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f8f6",
+  "theme_color": "#5b84dc",
+  "description": "A clear job application pipeline for roles, interviews, and follow-ups."
+}
